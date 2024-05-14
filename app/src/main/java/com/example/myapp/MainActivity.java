@@ -29,4 +29,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    //Enviar Parametros
+    public void Enviar(View view){
+        Intent i = new Intent(this, MainActivity2.class);
+        i.putExtra("CLAVE","VALOR");
+        startActivity(i);
+        finish();
+    }
 }
